@@ -15,32 +15,41 @@
 </head>
 
 <body>
+    <a class="btn btn-link btn-lg" href="/">
+        <i class="fa fa-home"></i>&nbsp;Home</a>
     <div class="jumbotron">
         <div class="container">
-            <a class="btn btn-primary" href="/"><i class="fa fa-home"></i>&nbsp;Home</a>
-            <form class="well well-lg" role="form">
+            <a class="btn btn-link btn-lg" href="/">
+                <i class="fa fa-home"></i>&nbsp;Home</a>
+            <form role="form">
                 <div class="form-group">
                     <label for="word">Word</label>
-                    <div class="btn btn-primary" id="lookup">
+                    <div class="btn btn-link btn-lg" id="lookup">
                         <i class="fa fa-book"></i>&nbsp;Look Up</div>
-                    <div class="btn btn-primary" id="next-word">
+                    <div class="btn btn-link btn-lg" id="next-word">
                         <i class="fa fa-angle-double-down"></i>&nbsp;Next</div>
                     <input id="word" class="form-control" />
                 </div>
                 <div class="form-group">
                     <label for="definition">Definition</label>
-                    <div class="btn btn-primary" id="next-def">
+                    <div class="btn btn-link btn-lg" id="next-def">
                         <i class="fa fa-angle-double-down"></i>&nbsp;Next</div>
                     <textarea id="definition" class="form-control" cols="30" rows="10"></textarea>
                 </div>
                 <div class="form-group">
                     <label for="sentence">Sentence</label>
-                    <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                    <button class="btn btn-link btn-lg" data-toggle="modal" data-target="#myModal">
                         <i class="fa fa-underline"></i>&nbsp;Highlight/Underline
                     </button>
-                    <div class="btn btn-primary" id="next-sentence">
+                    <div class="btn btn-link btn-lg" id="next-sentence">
                         <i class="fa fa-angle-double-down"></i>&nbsp;Next</div>
                     <textarea id="sentence" cols="30" rows="10" class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="origin">Origin</label>
+                    <button class="btn btn-link btn-lg" id="next-origin">
+                        <i class="fa fa-angle-double-down"></i>&nbsp;Next</button>
+                    <textarea class="form-control" id="origin" cols="30" rows="10"></textarea>
                 </div>
             </form>
         </div>
@@ -56,7 +65,7 @@
                     <p>Highlight it yourself, lazy butt!</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-link btn-lg" data-dismiss="modal">Close</button>
                 </div>
             </div>
             <!-- /.modal-content -->

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Videos</title>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        body {
+       font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+       font-weight: 300;
+    }
+    </style>
+</head>
+
+<body>
+    <a class="btn btn-link btn-lg" href="/">
+        <i class="fa fa-home"></i>&nbsp;Home</a>
+    <div class="jumbotron">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-4">
+                    <ul id="nav" class="nav nav-pills nav-stacked">
+
+                    </ul>
+                </div>
+                <div class="col-md-8">
+                    <div class="vD well well-lg">
+                        Hi
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script>
+    (function() {
+        var vObj;
+        $.get("./videos.json?r=" + new Date().getTime(), function(data) {
+            vObj = data;
+            var videos = vObj.videos;
+            for (var i in videos) {
+                var vObject = videos[i];
+                $('#nav').append("<li class=\"qLink\"><a class=\"btn btn-link btn-lg\" href=\"#\" data-v=\"" + i + "\">" + vObject.name + "</a></li>");
+            }
+        });
+        $('.qLink').click(function(e) {
+            console.log("zipedy doodah");
+        });
+    })();
+</script>
+
+</html>
