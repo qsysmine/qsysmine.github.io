@@ -74,11 +74,27 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="partofspeech"></label>
+                    <label for="partofspeech">Part of Speech</label>
                     <button class="btn btn-link btn-lg" id="next-partofspeech">
                         <i class="fa fa-angle-double-down"></i>&nbsp;Next</button>
-                    <input id="partofspeech" class="form-control" />
-
+                    <select id="partofspeech" class="form-control">
+                        <option value="Noun">Noun</option>
+                        <option value="Verb">Verb</option>
+                        <option value="Adjective">Adjective</option>
+                        <option value="Adverb">Adverb</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="synonym">Synonym</label>
+                    <button class="btn btn-link btn-lg" id="next-synonym">
+                        <i class="fa fa-angle-double-down"></i>&nbsp;Next</button>
+                    <input id="synonym" type="text" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label for="antonym">Antonym</label>
+                    <button class="btn btn-link btn-lg" id="next-antonym">
+                        <i class="fa fa-angle-double-down"></i>&nbsp;Next</button>
+                    <input id="antonym" type="text" class="form-control"/>
                 </div>
             </form>
         </div>
