@@ -25,35 +25,22 @@
                     <label for="word">Word</label>
                     <div class="btn btn-link btn-lg" id="lookup">
                         <i class="fa fa-book"></i>&nbsp;Look Up</div>
-                    <div class="btn btn-link btn-lg" id="next-word">
-                        <i class="fa fa-angle-double-down"></i>&nbsp;Next</div>
                     <input id="word" class="form-control" />
                 </div>
                 <div class="form-group">
                     <label for="definition">Definition</label>
-                    <div class="btn btn-link btn-lg" id="next-def">
-                        <i class="fa fa-angle-double-down"></i>&nbsp;Next</div>
                     <textarea id="definition" class="form-control" cols="30" rows="10"></textarea>
                 </div>
                 <div class="form-group">
                     <label for="sentence">Sentence</label>
-                    <button class="btn btn-link btn-lg" data-toggle="modal" data-target="#myModal">
-                        <i class="fa fa-underline"></i>&nbsp;Highlight/Underline
-                    </button>
-                    <div class="btn btn-link btn-lg" id="next-sentence">
-                        <i class="fa fa-angle-double-down"></i>&nbsp;Next</div>
                     <textarea id="sentence" cols="30" rows="10" class="form-control"></textarea>
                 </div>
                 <div class="form-group">
                     <label for="origin">Origin</label>
-                    <button class="btn btn-link btn-lg" id="next-origin">
-                        <i class="fa fa-angle-double-down"></i>&nbsp;Next</button>
                     <textarea class="form-control" id="origin" cols="30" rows="10"></textarea>
                 </div>
                 <div class="form-group">
                     <label for="remodeling1">Word Remodeling</label>
-                    <button class="btn btn-link btn-lg" id="next-remodeling">
-                        <i class="fa fa-angle-double-down"></i>&nbsp;Next</button>
                     <br/>
                     <input type="text" id="remodeling1" class="form-control" />
                     <br/>
@@ -75,8 +62,6 @@
                 </div>
                 <div class="form-group">
                     <label for="partofspeech">Part of Speech</label>
-                    <button class="btn btn-link btn-lg" id="next-partofspeech">
-                        <i class="fa fa-angle-double-down"></i>&nbsp;Next</button>
                     <select id="partofspeech" class="form-control">
                         <option value="Noun">Noun</option>
                         <option value="Verb">Verb</option>
@@ -86,38 +71,18 @@
                 </div>
                 <div class="form-group">
                     <label for="synonym">Synonym</label>
-                    <button class="btn btn-link btn-lg" id="next-synonym">
-                        <i class="fa fa-angle-double-down"></i>&nbsp;Next</button>
-                    <input id="synonym" type="text" class="form-control"/>
+                    <input id="synonym" type="text" class="form-control" />
                 </div>
                 <div class="form-group">
                     <label for="antonym">Antonym</label>
-                    <button class="btn btn-link btn-lg" id="next-antonym">
-                        <i class="fa fa-angle-double-down"></i>&nbsp;Next</button>
-                    <input id="antonym" type="text" class="form-control"/>
+                    <input id="antonym" type="text" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary" id="print">Print</button>
                 </div>
             </form>
         </div>
     </div>
-    <div id="myModal" class="modal fade">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title"></h4>
-                </div>
-                <div class="modal-body">
-                    <p>Highlight it yourself, lazy butt!</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-link btn-lg" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-            <!-- /.modal-content -->
-        </div>
-        <!-- /.modal-dialog -->
-    </div>
-    <!-- /.modal -->
 </body>
 <script src="http://code.jquery.com/jquery.min.js"></script>
 <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
@@ -129,18 +94,6 @@
         $('#lookup').click(function() {
             console.log("ermagherd");
             $("body").append("<script src='http://qsysmine.tk/vofv/request.php?word=" + $('#word').val() + "'></" + "script>");
-        });
-        $('#next-word').click(function() {
-            $('#definition').focus();
-        });
-        $('#next-def').click(function() {
-            $('#sentence').focus();
-        });
-        $('next-sentence').click(function() {
-            $('#origin').focus();
-        });
-        $('#next-origin').click(function() {
-            $('#remodeling-1').focus();
         });
     })();
 </script>
