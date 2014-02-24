@@ -3,99 +3,69 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>VofVMate®</title>
-    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
-    <style>
-        body {
-       font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-       font-weight: 300;
-    }
-    </style>
+    <title>V of V Manager v2.0</title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/colors/1.0/colors.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="./scripts.js"></script>
 </head>
 
 <body>
-    <a class="btn btn-link btn-lg" href="/">
-        <i class="fa fa-home"></i>&nbsp;Home</a>
-    <div class="jumbotron">
-        <div class="container">
-            <!--Everything here! -->
-            <form role="form">
-                <div class="form-group">
-                    <label for="word">Word</label>
-                    <div class="btn btn-link btn-lg" id="lookup">
-                        <i class="fa fa-book"></i>&nbsp;Look Up</div>
-                    <input id="word" class="form-control" />
-                </div>
-                <div class="form-group">
-                    <label for="definition">Definition</label>
-                    <textarea id="definition" class="form-control" cols="30" rows="10"></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="sentence">Sentence</label>
-                    <textarea id="sentence" cols="30" rows="10" class="form-control"></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="origin">Origin</label>
-                    <textarea class="form-control" id="origin" cols="30" rows="10"></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="remodeling1">Word Remodeling</label>
-                    <br/>
-                    <input type="text" id="remodeling1" class="form-control" />
-                    <br/>
-                    <select id="remodeling1pos" class="form-control">
-                        <option value="Noun">Noun</option>
-                        <option value="Verb">Verb</option>
-                        <option value="Adjective">Adjective</option>
-                        <option value="Adverb">Adverb</option>
-                    </select>
-                    <br/>
-                    <input type="text" id="remodeling2" class="form-control" />
-                    <br/>
-                    <select id="remodeling2pos" class="form-control">
-                        <option value="Noun">Noun</option>
-                        <option value="Verb">Verb</option>
-                        <option value="Adjective">Adjective</option>
-                        <option value="Adverb">Adverb</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="partofspeech">Part of Speech</label>
-                    <select id="partofspeech" class="form-control">
-                        <option value="Noun">Noun</option>
-                        <option value="Verb">Verb</option>
-                        <option value="Adjective">Adjective</option>
-                        <option value="Adverb">Adverb</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="synonym">Synonym</label>
-                    <input id="synonym" type="text" class="form-control" />
-                </div>
-                <div class="form-group">
-                    <label for="antonym">Antonym</label>
-                    <input id="antonym" type="text" class="form-control" />
-                </div>
-                <div class="form-group">
-                    <button class="btn btn-primary" id="print">Print</button>
-                </div>
-            </form>
+    <br>
+    <a id="homeLink" class="button" href="/">Home</a>
+    <br>
+    <br>
+    <br>
+    <div class="main bg-silver">
+        <div class="word bg-teal">
+            <input type="text" id="word" placeholder="Word">
+            <span class="button" id="define">Define</span>
+            <div class="printOnly" id="wordPO"></div>
         </div>
+        <br>
+        <div class="definition bg-teal">
+            <textarea name="" id="definition" cols="30" rows="10" placeholder="Definition"></textarea>
+            <div class="printOnly" id="defPO"></div>
+        </div>
+        <br/>
+        <div class="remodeling bg-teal ">
+            <input type="text" id="remodeling1" placeholder="Remodeling">
+            <select name="" class="pOs" id="pOs1">
+                <option value="noun">Noun</option>
+                <option value="verb">Verb</option>
+                <option value="adverb">Adverb</option>
+            </select>&nbsp;
+            <input type="text" id="remodeling2" placeholder="Remodeling">
+            <select name="" class="pOs" id="pOs2">
+                <option value="noun">Noun</option>
+                <option value="verb">Verb</option>
+                <option value="adverb">Adverb</option>
+            </select>
+            <div class="printOnly" id="remodelingPO"></div>
+        </div>
+        <br>
+        <div class="origin bg-teal">
+            <textarea name="" id="etymology" cols="30" rows="10" placeholder="Etymology"></textarea>
+            <a href="" class="button etymLink"></a>
+            <div class="printOnly" id="etymPO"></div>
+        </div>
+        <br/>
+        <div class="sentence bg-teal">
+            <textarea name="" id="sentence" cols="30" rows="10" placeholder="Sentence"></textarea>
+            <div class="printOnly" id="sentencePO"></div>
+        </div>
+        <br>
+        <div class="synonym bg-teal ">
+            <input type="text" id="synonym" placeholder="Synonym">
+            <div class="printOnly" id="synonymPO"></div>
+        </div>
+        <br>
+        <div class="antonym bg-teal ">
+            <input type="text" id="antonym" placeholder="Antonym">
+            <div class="printOnly" id="antonymPO"></div>
+        </div>
+        <br>
     </div>
 </body>
-<script src="http://code.jquery.com/jquery.min.js"></script>
-<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-<script>
-    (function() {
-        function capitaliseFirstLetter(string) {
-            return string.charAt(0).toUpperCase() + string.slice(1);
-        }
-        $('#lookup').click(function() {
-            console.log("ermagherd");
-            $("body").append("<script src='http://qsysmine.tk/vofv/request.php?word=" + $('#word').val() + "'></" + "script>");
-        });
-    })();
-</script>
 
 </html>
