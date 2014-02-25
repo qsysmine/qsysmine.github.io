@@ -12,7 +12,8 @@
 .synonym,
 .remodeling,
 .antonym,
-.sentence {
+.sentence,
+.image{
     padding: 1em;
     padding-top: 2em;
     padding-bottom: 2em;
@@ -40,7 +41,8 @@
 .pOs,
 #synonym,
 #sentence,
-#antonym {
+#antonym,
+#getImageURL{
     display: flex;
     flex: 1;
     border-radius: 15px;
@@ -72,6 +74,7 @@
     #synonym,
     #sentence,
     #antonym,
+    #getImageURL,
     .button{
         display: none;
     }
