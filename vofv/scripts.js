@@ -12,6 +12,7 @@ document.ready = function () {
         $(document).keyup(function () {
             setTimeout(function () {
                 $('#wordPO').html("Word: " + $('#word').val());
+                $('#pOSPO').html("Part of Speech: " + $('#pOS').val());
                 $('#defPO').html("Definition: " + $('#definition').val());
                 $('#remodelingPO').html("Remodeling: " + $('#remodeling1').val() + " (" + $('#pOs1').val() + "), " + $('#remodeling2').val() + " (" + $('#pOs2').val() + ")");
                 $('#etymPO').html("Origin: " + $('#etymology').val());
@@ -56,9 +57,11 @@ document.ready = function () {
             sentence: $('#sentencePO').html(),
             synonym: $('#synonymPO').html(),
             antonym: $('#antonymPO').html(),
+            partOfSpeech: $('#pOSPO').html(),
+            image: $('#vofvImage').attr('src'),
             unID: unID
         });
-        window.open("http://qsysmine.tk/vofv2drive/shell.php?id="+unID);
+        window.open("http://qsysmine.tk/vofv2drive/shell.php?id="+unID + "&word=" + $('#wordPO').html());
     });
     $('#getImageButton').click(function() {
         $('#vofvImage').attr('src', $('#getImageURL').val());
