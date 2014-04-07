@@ -13,7 +13,8 @@
 .remodeling,
 .antonym,
 .sentence,
-.image{
+.image,
+div.pOS{
     padding: 1em;
     padding-top: 2em;
     padding-bottom: 2em;
@@ -38,11 +39,12 @@
 #etymology,
 #remodeling1,
 #remodeling2,
-.pOs,
+#pOs,
 #synonym,
 #sentence,
 #antonym,
-#getImageURL{
+#getImageURL,
+.pOS{
     display: flex;
     flex: 1;
     border-radius: 15px;
@@ -75,6 +77,7 @@
     #sentence,
     #antonym,
     #getImageURL,
+    #pOS,
     .button{
         display: none;
     }
