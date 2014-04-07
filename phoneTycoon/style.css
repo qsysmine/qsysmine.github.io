@@ -1,0 +1,44 @@
+* {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+}
+body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+}
+#main {
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    left: 10%;
+    right: 10%;
+    padding: 1vw;
+    overflow: scroll;
+    box-shadow:0 10px 20px #aaa;
+}
+.hBD {
+    display: none;
+}
+#moneyShower {
+    background-color: #FF851B;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1em;
+    border-bottom-left-radius: 1em;
+}
+#stores {
+    display: flex;
+    width: 120vw;
+    overflow:scroll;
+}
+.store {
+    border-radius: 0.5em;
+    box-shadow: 0 10px 20px #aaa;
+    margin-right:0.5em;
+    margin-left:0.5em;
+}

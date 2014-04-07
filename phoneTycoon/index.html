@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Phone Tycoon</title>
+    <script src="/jquery.js"></script>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="init">
+            <h1>Get Started</h1>
+            <button id="startar">Click here</button>
+        </div>
+        <div id="init2" class="hBD">
+            <input id="cN" placeholder="Enter carrier name">
+            <br/>
+            <button id="startar2">Start Game</button>
+        </div>
+        <div id="game" class="hBD">
+            <div id="moneyShower">Money:
+                <span id="money"></span>
+            </div>
+            <div id="buy">
+                <label for="storeLevel">Store</label>
+                <select id="storeLevel">
+                    <option value="0">Level 1</option>
+                    <option value="1">Level 2</option>
+                </select>
+                <button id="buyStore"></button>
+                <br/>
+                <label for="phoneLevel">Phone</label>
+                <select id="phoneLevel">
+                    <option value="0">Level 1</option>
+                    <option value="1">Level 2</option>
+                    <option value="2">Level 3</option>
+                    <option value="3">Level 4</option>
+                </select>
+                <button id="buyPhone"></button>(
+                <span id="phDis"></span>)
+                <br/>
+
+                <label for="factoryLevel">Factory</label>
+                <select id="factoryLevel">
+                    <option value="0">Level 1</option>
+                    <option value="1">Level 2</option>
+                </select>
+                <button id="buyFactory"></button>(
+                <span id="facDis"></span>)
+            </div>
+            <div id="stores"></div>
+        </div>
+    </div>
+</body>
+
+</html>
