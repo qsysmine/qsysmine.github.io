@@ -14,7 +14,7 @@
 .antonym,
 .sentence,
 .image,
-div.pOS{
+.pOSD{
     padding: 1em;
     padding-top: 2em;
     padding-bottom: 2em;
@@ -39,12 +39,12 @@ div.pOS{
 #etymology,
 #remodeling1,
 #remodeling2,
-#pOs,
+#pOS,
 #synonym,
 #sentence,
 #antonym,
 #getImageURL,
-.pOS{
+.pOs{
     display: flex;
     flex: 1;
     border-radius: 15px;
