@@ -24,7 +24,7 @@ document.ready = function () {
         }
     };
     var showPosition = function(position) {
-        $('.weather').html("Found position: (X: " + position.coords.latitude + ", Y: " + position.coords.longitude + "). Loading location.");
+        $('.weather').html("Found position: (X: " + position.coords.latitude + ", Y: " + position.coords.longitude + "). Loading weather from <a href=\"http://forcast.io\">forecast.io</a>.");
         console.log("Herro");
         $('body').append("<script src=\"http://qsysmine.tk/homepage/weather.php?x=" + position.coords.latitude + "&y=" + position.coords.longitude + "\"></script>");
         console.log("Herro");
