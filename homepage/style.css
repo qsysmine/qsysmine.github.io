@@ -10,6 +10,7 @@ h1, h2, h3, h4 {
     box-shadow: 0 5px 10px #aaa;
     margin-bottom:1em;
     background-color: #eee;
+    display:none;
 }
 #main {
     padding-left: 5vw;
