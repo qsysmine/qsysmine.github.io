@@ -1,4 +1,5 @@
 document.ready = function () {
+    $('.card').slideDown(1000, function() {
     var date = new Date();
     var months = [
         "Jan",
@@ -30,4 +31,5 @@ document.ready = function () {
         console.log("Herro");
     };
     getLocation();
+    });
 };
