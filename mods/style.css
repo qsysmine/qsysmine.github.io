@@ -13,14 +13,19 @@
 }
 #down {
     flex:1;
-    background-color:#01FF70;
+    background-color: #FFDC00;
 }
 #docs {
     flex:1;
-    background-color: #7FDBFF;
+    background-color: #FF851B;
 }
 a {
-    color:#FF851B;
+    color:#001F3F;
+    text-decoration:none;
+}
+a:active {
+    color:#0074D9;
+    text-decoration:underline;
 }
 h1 {
     font-size:5vh;
