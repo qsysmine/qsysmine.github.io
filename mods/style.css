@@ -1,7 +1,15 @@
 * {
     font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", Helvetica, "Raleway" Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
+<<<<<<< HEAD
+<<<<<<< HEAD
     font-size: 5vh;
+=======
+    font-size:3vh;
+>>>>>>> FETCH_HEAD
+=======
+    font-size:3vh;
+>>>>>>> FETCH_HEAD
 }
 #container {
     display:flex;
@@ -14,16 +22,42 @@
 }
 #down {
     flex:1;
-    background-color:#01FF70;
+    background-color: #FFDC00;
 }
 #docs {
+<<<<<<< HEAD
+<<<<<<< HEAD
     flex:3;
     overflow:scroll;
     background-color: #7FDBFF;
+=======
+    flex:1;
+    background-color: #FF851B;
+>>>>>>> FETCH_HEAD
+=======
+    flex:1;
+    background-color: #FF851B;
+>>>>>>> FETCH_HEAD
 }
 a {
-    color:#FF851B;
+    color:#001F3F;
+    text-decoration:underline;
+}
+a:hover {
+    color:#0074D9;
+    text-decoration:none;
 }
 h1 {
+<<<<<<< HEAD
     font-size:7.5vh;
 }
+=======
+    font-size:5vh;
+}
+h2 {
+    font-size:4vh;
+}
+<<<<<<< HEAD
+>>>>>>> FETCH_HEAD
+=======
+>>>>>>> FETCH_HEAD
