@@ -1,0 +1,28 @@
+* {
+    font-family: "HelveticaNeue-UltraLight", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size: 5vh;
+    color: #FFF;
+}
+body {
+    background-color: #000;
+    text-align: center;
+}
+#amountOfSeekerTime,
+#amountOfHiderTime {
+    border: 0;
+    padding: 3vh;
+    text-align: center;
+    background-color: #000;
+    color: #FFF;
+}
+.button {
+    color: #FFF;
+    cursor: pointer;
+}
+.hidden {
+    display: none;
+}
+#countdown0,#countdown1 {
+    font-size:30vh;
+}
