@@ -1,0 +1,38 @@
+* {
+    font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", Helvetica, "Raleway" Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size: 5vh;
+}
+#container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+#down {
+    flex: 1;
+    background-color: #FFDC00;
+}
+#docs {
+    flex: 3;
+    overflow: scroll;
+    background-color: #7FDBFF;
+}
+a {
+    color: #001F3F;
+    text-decoration: underline;
+}
+a:hover {
+    color: #0074D9;
+    text-decoration: none;
+}
+h1 {
+    font-size: 7.5vh;
+}
+}
+h2 {
+    font-size: 4vh;
+}
