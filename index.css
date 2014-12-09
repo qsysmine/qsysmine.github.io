@@ -11,4 +11,5 @@ h1,h2,h3,h4,h5,h6 {
 }
 #main-header>h1,#main-header>h2,#main-header>h3,#main-header>h4,#main-header>h5,#main-header>h6 {
     margin: auto;
+    font-family:"Montserrat", "Oswald", Helvetica Neue, sans-serif;
 }
