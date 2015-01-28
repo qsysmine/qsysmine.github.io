@@ -1,8 +1,11 @@
-@import url(http://fonts.googleapis.com/css?family=Oswald:400,700|Montserrat:400,700|Roboto:700,400,700italic,400italic|Poiret+One|Lobster|Roboto+Slab:400,300);
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700|Montserrat:400,700|Source+Sans|Roboto:700,400,700italic,400italic|Poiret+One|Lobster|Roboto+Slab:400,300);
 * {
     font-family:Helvetica Neue, "Montserrat", sans-serif;
 }
-h1,h2,h3,h4,h5,h6 {
+h1 {
+    font-family:"Source Sans", Helvetica Neue, sans-serif;
+}
+h2,h3,h4,h5,h6 {
     font-family:"Oswald", Helvetica Neue, sans-serif;
     font-weight: 700;
 }
