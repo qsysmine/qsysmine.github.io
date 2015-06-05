@@ -5,7 +5,8 @@
     <meta charset="UTF-8" />
     <title>Q SYS MINE</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css">
-    <link rel="stylesheet" href="http://qzqp.tk/file/s.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400italic,700italic,700,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="fnt.css">
 </head>
 
 <body>
@@ -81,4 +82,15 @@
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
+    <script src="https://cdn.rawgit.com/namuol/cheet.js/master/cheet.min.js"></script>
+    <script>
+    cheet("y e e", function() {
+        Materialize.toast("Y", 500);
+        setTimeout(function() {
+            Materialize.toast("E", 500);
+            setTimeout(function() {
+                Materialize.toast("E", 500);
+            }, 200);
+        }, 200)
+    });</script>
 </html>
