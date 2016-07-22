@@ -101,7 +101,6 @@ $(function() {
     };
     var hSVG = "";
     $.get("/h.svg", {}, function(data) {
-        console.log(data);
         hSVG = data;
     }, "text");
     $(document).keydown(function(e) {

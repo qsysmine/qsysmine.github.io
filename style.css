@@ -85,6 +85,12 @@ a.silent {
 a.silent:hover {
     background-color:#E5E5E5;
 }
+a[href^="mailto:"] {
+    color:#222222;
+    font-weight:bold;
+    text-decoration:none;
+    margin:0;
+}
 #ari, #subAri {
     text-align:center;
 }

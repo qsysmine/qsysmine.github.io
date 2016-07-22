@@ -4,7 +4,6 @@ $(function() {
         if($('#designContainer').length) {
             var pics = data.data;
             pics.forEach(function(a, b) {
-                console.log(a);
                 var downloadURL = a.download_url;
                 var picURL = downloadURL.replace("raw.githubusercontent.com", "rawgit.com");
                 $('#designContainer').append("<img class='grid-item' src='" + picURL + "'>");
