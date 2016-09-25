@@ -1,0 +1,74 @@
+==================================================================
+https://keybase.io/qsysmine
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://qsysmine.github.io
+  * I am qsysmine (https://keybase.io/qsysmine) on keybase.
+  * I have a public key with fingerprint E589 6A0E 7408 6B47 3D42  867E EFAF 6FF8 31A7 C2A8
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01010ab6d4451b5897292b0f26491ccb0bc54be5e3d53684fd739bc1fa3788c147630a",
+            "fingerprint": "e5896a0e74086b473d42867eefaf6ff831a7c2a8",
+            "host": "keybase.io",
+            "key_id": "efaf6ff831a7c2a8",
+            "kid": "01010ab6d4451b5897292b0f26491ccb0bc54be5e3d53684fd739bc1fa3788c147630a",
+            "uid": "3a78a172fd98a1041a3241565d52da19",
+            "username": "qsysmine"
+        },
+        "service": {
+            "hostname": "qsysmine.github.io",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1473689286,
+    "expire_in": 157680000,
+    "prev": "b60c21f75ab48d87df96c056be7aca8a1f80ca31bf86fb6c8050d9440d6a8f6c",
+    "seqno": 18,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.56
+Comment: https://keybase.io/crypto
+
+yMNFAnicrVJtUFRVGN5FVFgncCJgsCK94JQEeO/eb0CcKTJAwJhhRBgQ78e57A3Z
+u+xdFhaKchIrDapRHAYLa9P4WKAaP0IHpgFEBMRMA8YmLFgERgbJpuJDlM6l+tP0
+s3N+vHPe8zzPeZ53zqXHVukM+tkvlHmsrrNe399RW6hLHzp/uRThFdGBRJUieWCl
+gP0iUG05ebKIRCEoBjfHUyJBkBhPMixtZI08KhkpgsUEgUd5gSR4QAJcJHGKISSR
+xllewCQOpxlGwAiawlEOCUck2ZwLrBarbLZBWQCVKA4FNIEyFE/QuEgYGYoGQOIk
+SpIYHONowcgxkGhSVI0BzfGcCiJlBfbgIWfF3n/g/2ffhStyOEczHEYbJZGFFSUw
+DjcSGEmRImkUOYzVgCqwmrl8ANEFqkPNl80AeT0cgV27LABtsFqSfyEic2WbqZD/
+K5XFqtgUQdkP7002m0WN0vg2h0UjFAE+52+pHF42i3CakGEHVlVWzEgUBpGCTda0
+oXUYiIXjDEdAsUW2ghxZQ5A0xaBwae8AO5TkKVQwYhJNcjzBiAwtSiwloCTFA5oT
+OBhTYlCBwzFeYiiJpwQGJVGRJQhUpDhGogREC1dgVqA2A31yuVBTlXPNnK3QCqN3
+dmR56vQG3ZrVHto30xm81//z+dLc63UfZsdMls3OXImZ81n7fLNa5Ow5jLfdHAu5
+7n6lYWx5z6uR+sbR9tM3L1e2hDXM7Kp+kJycHTTYXXHX9EKoT2LEzFdVzqM7a54N
++bSq6TknOFcZ+MiRdGHIlO83Gl8d2Bywe233zsNPTP4yHLGxxFVC+usq1nn9KBej
+VPf2vKWPt877DFwnPCb9LpSl5wdvou7G6w9GBt6L80EWD37T/1vJ5jUWRR/bKtbd
+mUgxF7/v80OFPbTk2pNV1Vvch+IyNzZ1/u48ub0QoF73TCO9O3Y/+HXLnvOLO2zB
+43PpB4YPnZ12le/tdrTF1nqrDbf3fTube3HZYAnsRCdc1LGuG291jNUotwYWXO6Y
+6HerU6tjp9iIwfC+At0Jj1aT18OprjlXb2uM6Pn0qsqX/SP8xl+7FbzwsJP9ri3g
+ba8bVMb8H2mZU43Ez0lfvhEadmr0dkJX3yf2O4+by94bHKjtWWqfmLvo6/WUodyN
+109/H/1S1rGfss60eaaSvbviunyjQy4l3zdmlhnOtvcEHPCObsq4kh00bRo6jiY6
+032/Tgw7E+qIix5ozg7Z/OLk1tI3T31QXx9eX3Nt3L10deTzR35FcsLRhfTyMv3e
+wcbFDY6JpIy+I43bXEupC0EjH52Lq4tfvmq9/47/hgTn8FTVthZlFN237mT/M30J
+p+0pyWkpS6U1vptSV7d8ViuzfwIvTczQ
+=vFel
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/qsysmine
+
+==================================================================
