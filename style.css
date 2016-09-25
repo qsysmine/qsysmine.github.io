@@ -43,6 +43,31 @@ h1, h2, h3, h4, h5, h6 {
 .container>.container {
     padding:0;
 }
+.panel {
+    padding-left: 1em;
+    padding-right:1em;
+    padding-bottom:1em;
+    border-radius:1em;
+    border: 1px solid #DDDDDD;
+}
+.row {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+.col-oneunit {
+    flex:1;
+    padding:0.5em;
+}
+.col-twounits {
+    flex:2;
+    padding:0.5em;
+}
+.fullWidth {
+    display:block;
+    width:100%;
+}
 .bigAmp {
     font-weight:bold;
     font-size:150%;
