@@ -5,7 +5,7 @@ $(function() {
             var pics = data.data;
             pics.forEach(function(a, b) {
                 var downloadURL = a.download_url;
-                var picURL = downloadURL.replace("raw.githubusercontent.com", "rawgit.com");
+                var picURL = downloadURL.replace("raw.githubusercontent.com", "rawgit.com").replace("http:", "https:");
                 $('#designContainer').append("<img class='grid-item' src='" + picURL + "'>");
             });
             var $grid = $('#designContainer').masonry({
