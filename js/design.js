@@ -9,7 +9,8 @@ $(function() {
                 $('#designContainer').append("<img class='grid-item' src='" + picURL + "'>");
             });
             var $grid = $('#designContainer').masonry({
-                itemSelector: '.grid-item'
+                itemSelector: '.grid-item',
+                gutter: 10
             });
             $grid.imagesLoaded().progress(function() {
                 $grid.masonry('layout');

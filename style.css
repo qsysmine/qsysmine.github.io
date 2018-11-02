@@ -19,6 +19,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 .grid-item {
     width:100%;
+    margin-bottom:10px;
+    border: 1px solid #E5E5E5;
+    background-color:white;
 }
 @media only screen and (min-width : 500px) {
     .grid-item {
