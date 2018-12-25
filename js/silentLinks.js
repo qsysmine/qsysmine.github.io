@@ -99,22 +99,5 @@ $(function() {
             if(isLocal) loadPage(href, true);
         }
     };
-    var hSVG = "";
-    $.get("/h.svg", {}, function(data) {
-        hSVG = data;
-    }, "text");
-    $(document).keydown(function(e) {
-        if($(e.target).is('input')) {
-            return;
-        } else if(e.keyCode == 74 && hSVG != "") {
-            var hSDiv = $('<div class="bigImgContainer">' + hSVG + '</div>');
-            hSDiv.appendTo("body").transition({
-                opacity: 0
-            }, 1000, function() {
-                $(this).remove();
-            });
-            return false;
-        }
-    });
     resolveSilentLinks();
 });
