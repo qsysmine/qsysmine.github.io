@@ -1,4 +1,9 @@
 $(function() {
+    var titles = {
+      "/design/": "Design - Ari Stassinopoulos",
+      "/development/": "Development - Ari Stassinopoulos",
+      "/": "Ari Stassinopoulos"
+    };
     var loadPage = function(href, ps) {
         if(href != "/") {
             $('body').css({
@@ -69,6 +74,11 @@ $(function() {
                 });
             })
         }
+        if(titles[href]) {
+        for(el in document.getElementsByTagName("title")) {
+          document.getElementsByTagName("title")[el].innerText = titles[href];
+        }
+      }
     };
     window.resolveSilentLinks = function() {
         $('a.silent').each(function(index, element) {
