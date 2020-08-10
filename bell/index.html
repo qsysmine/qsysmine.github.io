@@ -7,8 +7,9 @@
   <title>DHS Bell Schedule App</title>
 </head>
 <body>
-  <div><a href="http://appstore.com/adonisstassinopoulos/dhsbellschedule">iOS</a></div>
-  <div><a href="https://play.google.com/store/apps/details?id=com.stassinopoulos.ari.dhsbellschedule">Android</a></div>
+  <div class="noflex"><h1>The DHS Bell Schedule App</h1><h3><a href="https://ari-s.com">A service provided by Ari Stassinopoulos, C/O 2020</a></h3></div>
+  <div><a class="appLink" href="http://appstore.com/adonisstassinopoulos/dhsbellschedule">iOS</a></div>
+  <div><a class="appLink" href="https://play.google.com/store/apps/details?id=com.stassinopoulos.ari.dhsbellschedule">Android</a></div>
 </body>
 <style>
 body {
@@ -19,21 +20,26 @@ body {
   bottom:0;
   left:0;
   right:0;
+  font-family: "Helvetica", "Segoe UI", monospace, sans-serif;
 }
 div {
-  flex:1;
+  flex:2;
   display:flex;
+  flex-direction:column;
   align-items:center;
   justify-content:center;
   text-align:center;
 }
-a {
+div.noflex {
+  flex:1;
+  display:block;
+}
+a.appLink {
   font-size: 4em;
   color: #FFF;
   text-decoration: none;
   background-color: #000;
   padding:0.25em;
-  font-family: "Helvetica", "Segoe UI", monospace, sans-serif;
 }
 </style>
 </html>
