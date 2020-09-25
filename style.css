@@ -112,6 +112,7 @@ a.silent {
     color:#222222;
     padding:0.1em;
     transition: all 0.5s ease-in-out;
+    font-weight:bold;
 }
 a.silent:hover {
     background-color:#E5E5E5;
