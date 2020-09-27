@@ -4,6 +4,7 @@ $(function() {
       "/development/": "Development - Ari Stassinopoulos",
       "/": "Ari Stassinopoulos"
     };
+
     var loadPage = function(href, ps) {
         if(href != "/") {
             $('body').css({
@@ -17,6 +18,7 @@ $(function() {
             redDiv.appendTo("html").transition({
                 translate: [0, 0]
             }, 500, function() {
+              window.scrollTo(0,0);
                 $('#container').load(href + " #container", function() {
                     if(!ps) history.pushState({
                         path: href
@@ -57,6 +59,7 @@ $(function() {
                 $('body').css({
                     overflowY: "hidden"
                 });
+                window.scrollTo(0,0);
                 $('#container').load(href + " #container", function() {
                     if(!ps) history.pushState({
                         path: href
@@ -81,6 +84,9 @@ $(function() {
       }
     };
     window.resolveSilentLinks = function() {
+      window.onpopstate = (() => {
+        loadPage(location.pathname, true);
+      });
         $('a.silent').each(function(index, element) {
             var $element = $(this);
             $element.click(function(e) {
